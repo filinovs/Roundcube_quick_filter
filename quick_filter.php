@@ -1,3 +1,4 @@
+<?php
 /**
 * Quick Filter
 *
@@ -9,10 +10,11 @@
 */
 class quick_filter extends rcube_plugin
 {
+    public $task = 'mail';
 
-function init()
-{
-$this->include_script('client.js');
-}
+    function init()
+    {
+        $this->include_script('client.js');
+    }
 
 }
