@@ -14,6 +14,7 @@ class quick_filter extends rcube_plugin
 
     function init()
     {
+        $this->add_texts('localization/', true);
         $this->include_script('client.js');
     }
 
